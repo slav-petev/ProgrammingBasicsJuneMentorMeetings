@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairingTheTiles", "Repair
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepyTom", "SleepyTom\SleepyTom.csproj", "{196D2C43-6C62-4AF3-9B44-3F770B416CDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationBetweenNumbers", "OperationBetweenNumbers\OperationBetweenNumbers.csproj", "{14138887-124D-4EF1-871F-E3DE37F45992}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{196D2C43-6C62-4AF3-9B44-3F770B416CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{196D2C43-6C62-4AF3-9B44-3F770B416CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{196D2C43-6C62-4AF3-9B44-3F770B416CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14138887-124D-4EF1-871F-E3DE37F45992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14138887-124D-4EF1-871F-E3DE37F45992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14138887-124D-4EF1-871F-E3DE37F45992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14138887-124D-4EF1-871F-E3DE37F45992}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
