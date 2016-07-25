@@ -27,13 +27,14 @@ namespace _02.Harvest
             }
             else
             {
-                Console.WriteLine(
-                    $"Good harvest this year! Total wine: {totalLitresOfVineProduced} liters.");
+                Console.Write("Good harvest this year! Total wine: ");
+                Console.WriteLine($"{(int)Math.Floor(totalLitresOfVineProduced)} liters.");
 
                 double litresOfVineLeft = 
                     Math.Ceiling(totalLitresOfVineProduced - litersOfVineNeeded);
                 Console.Write($"{litresOfVineLeft} liters left -> ");
-                double litresOfVinePerPerson = litresOfVineLeft / numberOfWorkers;
+                int litresOfVinePerPerson = 
+                    (int) Math.Ceiling(litresOfVineLeft / numberOfWorkers);
                 Console.WriteLine($"{litresOfVinePerPerson} liters per person.");
             }
         }
