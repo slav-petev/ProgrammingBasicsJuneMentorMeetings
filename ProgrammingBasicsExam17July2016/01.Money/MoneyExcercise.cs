@@ -7,24 +7,24 @@ namespace _01.Money
         static void Main()
         {
             int bitCoinsCount = int.Parse(Console.ReadLine());
-            decimal chineseYansCount = decimal.Parse(Console.ReadLine());
-            decimal changeBuroCommissionRate = decimal.Parse(Console.ReadLine());
+            double chineseYansCount = double.Parse(Console.ReadLine());
+            double changeBuroCommissionRate = double.Parse(Console.ReadLine());
 
-            const decimal bgnInBitCoin = 1168;
-            decimal bgnFromBitCoinsAmount = bitCoinsCount * bgnInBitCoin;
-            const decimal dollarsInChineseYuan = 0.15M;
-            decimal dollarsFromChineseYuansAmount = chineseYansCount * dollarsInChineseYuan;
-            const decimal bgnInDollar = 1.76M;
-            decimal bgnFromChineseYuansAmount = dollarsFromChineseYuansAmount * bgnInDollar;
+            const double bgnInBitCoin = 1168;
+            double bgnFromBitCoinsAmount = bitCoinsCount * bgnInBitCoin;
+            const double dollarsInChineseYuan = 0.15;
+            double dollarsFromChineseYuansAmount = chineseYansCount * dollarsInChineseYuan;
+            const double bgnInDollar = 1.76;
+            double bgnFromChineseYuansAmount = dollarsFromChineseYuansAmount * bgnInDollar;
 
-            decimal totalBgnAmount = bgnFromBitCoinsAmount + bgnFromChineseYuansAmount;
-            const decimal bgnInEuro = 1.95M;
-            decimal totalEuroAmount = totalBgnAmount / bgnInEuro;
+            double totalBgnAmount = bgnFromBitCoinsAmount + bgnFromChineseYuansAmount;
+            const double bgnInEuro = 1.95;
+            double totalEuroAmount = totalBgnAmount / bgnInEuro;
 
-            decimal commissionAmount = (changeBuroCommissionRate / 100) * totalEuroAmount;
-            decimal netEuroAmount = totalEuroAmount - commissionAmount;
+            double commissionAmount = (changeBuroCommissionRate / 100) * totalEuroAmount;
+            double netEuroAmount = totalEuroAmount - commissionAmount;
 
-            Console.WriteLine($"{netEuroAmount:F12}");
+            Console.WriteLine(netEuroAmount);
         }
     }
 }
